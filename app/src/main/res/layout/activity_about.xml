@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_activity_about"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_delivery_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:background="#fff">
+        <LinearLayout
+            android:id="@+id/ll_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/click_menu_background">
+
+            <ImageView
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_10"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_delivery_bar_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="起源·部落"
+            android:textSize="@dimen/sp_17"
+            android:textColor="#494444"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/ll_search_waybill"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/click_menu_background">
+
+
+            <ImageView
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <TextView
+            android:id="@+id/tv_about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Origin Express"
+            android:textSize="50sp"
+            android:textColor="@color/colorThemeA400"
+            />
+
+        <TextView
+            android:id="@+id/tv_about_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="版本:v1.0"
+            android:textSize="@dimen/sp_25"
+            android:textColor="@color/colorThemeA400"/>
+
+        <TextView
+            android:id="@+id/tv_about_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="开源许可证:GNU General Public License v3.0"
+            android:textColor="@color/colorThemeA400"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv_month_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/colorThemeA700"
+            android:textSize="@dimen/dp_13"/>
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="@dimen/dp_12"
+            android:textColor="@color/colorThemeA700"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        
+        <View
+            android:id="@+id/tv_to_view"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="0dp"
+            android:background="@color/colorThemeA400"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/circle"
+            android:layout_gravity="center"/>
+
+
+        <View
+            android:id="@+id/tv_go_view"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="0dp"
+            android:background="@color/colorThemeA400"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/colorText"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
