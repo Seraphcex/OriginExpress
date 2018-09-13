@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.LinearLayout;
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -12,19 +13,16 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+        init();
+    }
 
-        //替换toolbar
-        Toolbar toolbar = findViewById(R.id.tb_activity_about);
-        setSupportActionBar(toolbar);
-        toolbar.setNavigationIcon(R.drawable.baseline_arrow_back_white_36);
-        toolbar.setTitle(R.string.app_name);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+    public void init(){
+        LinearLayout ll_return = findViewById(R.id.ll_return);
+        ll_return.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AboutActivity.this,SettingActivity.class);
-                startActivity(intent);
+            public void onClick(View view) {
+                finish();
             }
         });
-
     }
 }

@@ -78,8 +78,7 @@
             android:layout_alignParentBottom="true"
             android:text="退出登录"
             android:textSize="@dimen/sp_30"
-            android:typeface="monospace"
-            android:background="@drawable/btn_red"/>
+            android:typeface="monospace"/>
 
     </RelativeLayout>
 
