@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Origin Express</string>
+    <string name="app_name">起源部落</string>
+    <string name="title_activity_driving">DrivingActivity</string>
 </resources>

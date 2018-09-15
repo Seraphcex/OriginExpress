@@ -1,4 +1,4 @@
-package com.origin.originexpress;
+package com.origin.originexpress.utils;
 
 import android.text.Editable;
 import android.text.TextWatcher;

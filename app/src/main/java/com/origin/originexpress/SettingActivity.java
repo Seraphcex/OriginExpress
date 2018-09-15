@@ -12,6 +12,9 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.support.v7.widget.Toolbar;
 
+import com.origin.originexpress.login.LoginActivity;
+import com.origin.originexpress.main.MainActivity;
+
 public class SettingActivity extends AppCompatActivity {
 
     @Override
